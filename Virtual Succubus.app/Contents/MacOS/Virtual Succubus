@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ ! -f "$(dirname "$0")/../Resources/prefix/drive_c/Program Files (x86)/Virtual Succubus/Virtual Succubus.exe" ]; then
+	osascript -e 'display alert "Game is not installed properly!" message "Cannot find VS executable - check if VS is installed correctly."'
+	exit 1
+fi
+
+if [ ! -d "$HOME/Library/Application Support/SuccuDev/" ]; then
+	echo "wrapper: SuccuDev directory not present, creating one"
+	mkdir "$HOME/Library/Application Support/SuccuDev/"
+fi
+
+cd "$(dirname "$0")/../Resources/prefix/drive_c/"
+
+export WINEPREFIX="$(dirname "$0")/../Resources/prefix/"
+export WINEARCH="win64"
+export WINEDEBUG=""
+
+../../../MacOS/wine64 "C:/Program Files (x86)/Virtual Succubus/Virtual Succubus.exe" "-force-feature-level-10-0"
