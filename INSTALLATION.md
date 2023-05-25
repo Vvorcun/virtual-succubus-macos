@@ -1,17 +1,12 @@
 # Installation
-Download Virtual Succubus.dmg and extract Virtual Succubus.app anywhere you want - preferably to Applications folder. After that, right-click on it and pick "Show Package Contents".
+Download Virtual Succubus.dmg and extract Virtual Succubus anywhere you want - preferably to Applications folder. Now open it. A window asking for a game archive should appear. Download Windows version of VS and choose it inside that window.
 <br />
+<img width="912" alt="Screenshot 2023-05-25 at 22 48 31" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/555abfcc-6cf5-4a75-8d65-df1e559291b7">
 <br />
-<img width="972" alt="Screenshot 2023-05-20 at 00 39 04" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/f3008652-d253-4998-85b2-c79676196c2b">
+After some time confirmation window should appear. You're done - now just open Virtual Succubus again and you're good to go!
 <br />
+<img width="372" alt="Screenshot 2023-05-25 at 22 48 38" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/df4acecb-5f06-46c2-90bf-797a418ace56">
 <br />
-Open Contents folder. There you'll see "Place VS Files Here" folder - as you've already guessed, that's where you should put VS files! Both demo and full release of Windows version should work.
-<br />
-<br />
-<img width="972" alt="Screenshot 2023-05-20 at 00 45 19" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/aa779dd7-22b2-494e-9921-47046489ee7d">
-<br />
-<br />
-That's how your installation should look in the end. Congrats! Now app is ready to run - double-click Virtual Succubus.app and enjoy!
-<br />
-<br />
-<img width="972" alt="Screenshot 2023-05-20 at 00 45 28" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/41e3e274-37aa-405e-bf13-ab214c426310">
+# Update
+Just delete old Virtual Succubus app and replace it with a new one. Don't worry - all your saves are still intact. You'll however need to set your password once again.
+<img width="1032" alt="Screenshot 2023-05-25 at 22 47 29" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/454a87ee-01fb-4add-8557-812f6c39a36a">
