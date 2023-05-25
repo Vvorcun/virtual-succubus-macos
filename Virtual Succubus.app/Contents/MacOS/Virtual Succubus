@@ -27,4 +27,4 @@ export WINEPREFIX="$(dirname "$0")/../Resources/prefix/"
 export WINEARCH="win64"
 export WINEDEBUG=""
 
-../../../MacOS/wine64 "C:/Program Files (x86)/Virtual Succubus/Virtual Succubus.exe" "-force-feature-level-10-0"
+../../../MacOS/wine64 "C:/Program Files (x86)/Virtual Succubus/Virtual Succubus.exe" "-force-feature-level-10-1"
