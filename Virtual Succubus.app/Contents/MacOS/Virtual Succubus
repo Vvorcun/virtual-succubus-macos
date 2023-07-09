@@ -1,30 +1,29 @@
-#!/bin/sh
+#!/usr/bin/env arch -x86_64 bash
 
-if [ ! -f "$(dirname "$0")/../Resources/prefix/drive_c/Program Files (x86)/Virtual Succubus/Virtual Succubus.exe" ]; then
-	cd "$(dirname "$0")/../../.."
+if [ ! -f "$(dirname "$0")/../Resources/prefix/drive_c/Program Files/Virtual Succubus/Virtual Succubus.exe" ]; then
+	while [ ! -d "$GPTKPATH" ]; do
+		GPTKPATH=$(osascript -e 'set gptkPath to POSIX path of (choose folder with prompt "Please select GPTk folder:")')
+		if [ ! $GPTKPATH ]; then
+			exit 0
+		fi
+	done
+	ditto "$GPTKPATH/lib" "$(dirname "$0")/../Resources/wine/lib"
+	DYLD_FALLBACK_LIBRARY_PATH="$(dirname "$0")/../Resources/wine/lib/dyld" WINEPREFIX="$(dirname "$0")/../Resources/prefix" WINEDEBUG="-all" "$(dirname "$0")/wine64" regedit "$(dirname "$0")/../Resources/windowed.reg"
+	mkdir "$(dirname "$0")/../Resources/prefix/drive_c/Program Files/Virtual Succubus"
+	if [ ! -d "$HOME/Library/Application Support/SuccuDev" ]; then
+		mkdir "$HOME/Library/Application Support/SuccuDev"
+	fi
+	ln -s "$HOME/Library/Application Support/SuccuDev" "$(dirname "$0")/../Resources/prefix/drive_c/users/crossover/AppData/LocalLow/SuccuDev"
+	cd "$(dirname "$0")/../Resources/prefix/drive_c/Program Files/Virtual Succubus"
 	while [ ! -f "$ARCHIVEPATH" ]; do
 		ARCHIVEPATH=$(osascript -e 'set archivePath to POSIX path of (choose file with prompt "Please select VS installation archive:" of type {"zip"})')
 		if [ ! $ARCHIVEPATH ]; then
 			exit 0
 		fi
 	done
-	FOLDERNAME=$(basename "$ARCHIVEPATH" .zip)
-	unzip "$ARCHIVEPATH" -d "Virtual Succubus.app/Contents/Resources/prefix/drive_c/Program Files (x86)"
-	mv "Virtual Succubus.app/Contents/Resources/prefix/drive_c/Program Files (x86)/$FOLDERNAME" "Virtual Succubus.app/Contents/Resources/prefix/drive_c/Program Files (x86)/Virtual Succubus"
+	bsdtar --strip-components=1 -xvf "$ARCHIVEPATH"
 	osascript -e 'display alert "Virtual Succubus is successfully installed!" message "Restart an application in order to run it."'
 else
-	if [ ! -d "$HOME/Library/Application Support/SuccuDev/" ]; then
-		echo "wrapper: SuccuDev directory not present, creating one"
-		mkdir "$HOME/Library/Application Support/SuccuDev/"
-	else
-		echo "wrapper: SuccuDev directory is present, starting wrapper"
-	fi
-
-	cd "$(dirname "$0")/../Resources/prefix/drive_c/"
-
-	export WINEPREFIX="$(dirname "$0")/../Resources/prefix/"
-	export WINEARCH="win64"
-	export WINEDEBUG=""
-
-	../../../MacOS/wine64 "C:/Program Files (x86)/Virtual Succubus/Virtual Succubus.exe" "-force-feature-level-10-1"
+	cd "$(dirname "$0")/../Resources/prefix/drive_c/Program Files/Virtual Succubus/"
+	DYLD_FALLBACK_LIBRARY_PATH="$(dirname "$0")/../Resources/wine/lib/dyld" WINEESYNC=1 WINEPREFIX="$(dirname "$0")/../Resources/prefix" WINEDEBUG="-all" "$(dirname "$0")/wine64" "C:/Program Files/Virtual Succubus/Virtual Succubus.exe"
 fi
