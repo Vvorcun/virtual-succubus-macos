@@ -3,7 +3,7 @@ Like most of you, I really like VS, but I don't have Android device nor Windows 
 
 Both demo and full release work - this wrapper was tested on M1 MacBook Air 2020 with VS 0.39, however previous versions of the game should also work.
 
-While this wrapper work without any issues on Apple Silicon Macs, there are some compatibility issues on Intel Macs, and for now VS is not guaranteed to work on anything Intel-based.
+Since this wrapper uses Game Porting Toolkit, Apple Silicon Mac with macOS 13.4+ is required.
 
 ## Download and install
 You'll need Windows version of VS and latest build of this wrapper, which you can download [here](https://github.com/Ferbez/virtual-succubus-macos/releases). Detailed installation guide is available [here](https://github.com/Ferbez/virtual-succubus-macos/blob/main/INSTALLATION.md).
