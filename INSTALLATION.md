@@ -1,5 +1,5 @@
 # Installation
-Download Virtual Succubus.dmg and Game Porting Toolkit 1.0 - you can get it at [apple.com](https://developer.apple.com/download/all/?q=game%20porting%20toolkit). Mount both of those .dmg files and extract Virtual Succubus anywhere you want - preferably to Applications folder. Now open it. A window asking for a Game Porting Toolkit should appear - choose it inside that window, as shown on screenshot.
+Download Virtual Succubus.dmg [here](https://github.com/Ferbez/virtual-succubus-macos/releases/tag/1.2) and Game Porting Toolkit 1.0 [here](https://developer.apple.com/download/all/?q=game%20porting%20toolkit). Mount both of those .dmg files and extract Virtual Succubus anywhere you want - preferably to Applications folder. Now open it. A window asking for a Game Porting Toolkit should appear - choose it inside that window, as shown on screenshot.
 <br />
 <img width="912" alt="Screenshot 2023-07-09 at 18 26 31" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/2d70dbb6-5868-4109-a80a-c56e1209b89e">
 <br />
