@@ -2,14 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>CFBundleDevelopmentRegion</key>
+	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>NSHighResolutionCapable</key>
 	<true/>
 	<key>CFBundleExecutable</key>
-	<string>Virtual Succubus</string>
+	<string>launcher</string>
 	<key>CFBundleIconFile</key>
-	<string>Virtual Succubus</string>
+	<string>icon</string>
 	<key>CFBundleName</key>
 	<string>Virtual Succubus</string>
 	<key>CFBundlePackageType</key>
@@ -17,10 +17,10 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.SuccuDev.VirtualSuccubus</string>
 	<key>CFBundleVersion</key>
-	<string>0.39R3</string>
+	<string>1.2.1</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.games</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.13.0</string>
+	<string>13.4</string>
 </dict>
 </plist>
