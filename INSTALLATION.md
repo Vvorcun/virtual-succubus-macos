@@ -1,6 +1,6 @@
 # Installation (Apple Silicon version)
 ## Game Porting Toolkit download
-Due to Apple's License Agreement, it's not possible to distribute Game Porting Toolkit's libraries, so you'll need to download it yourself. Visit [apple.com](https://developer.apple.com/download/all/?q=game%20porting%20toolkit) and download Game Porting Toolkit beta. You'll need that file later for installation.
+Due to Apple's License Agreement, it's not possible to distribute Game Porting Toolkit's libraries, so you'll need to download it yourself. Visit [apple.com](https://developer.apple.com/download/all/?q=game%20porting%20toolkit) and download Game Porting Toolkit beta (not beta 2 or beta 3). You'll need that file later for installation.
 <br />
 <img width="1552" alt="Screenshot 2023-07-12 at 03 43 09" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/e92891db-04f1-4683-960b-7677631842b9">
 <br />
