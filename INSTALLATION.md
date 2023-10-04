@@ -1,15 +1,6 @@
-# Installation (Apple Silicon version)
-## Game Porting Toolkit download
-Due to Apple's License Agreement, it's not possible to distribute Game Porting Toolkit's libraries, so you'll need to download it yourself. Visit [apple.com](https://developer.apple.com/download/all/?q=game%20porting%20toolkit) and download Game Porting Toolkit beta (not beta 2 or beta 3). You'll need that file later for installation.
-<br />
-<img width="1552" alt="Screenshot 2023-07-12 at 03 43 09" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/e92891db-04f1-4683-960b-7677631842b9">
-<br />
+# Installation
 ## First launch
-Download Virtual Succubus (Apple Silicon).dmg at [github.com](https://github.com/Ferbez/virtual-succubus-macos/releases/tag/1.2) and move Virtual Succubus app anywhere you want - preferably to Applications folder. Now open it. A window asking for a Game Porting Toolkit should appear - choose it inside that window, as shown on screenshot.
-<br />
-<img width="912" alt="Screenshot 2023-07-12 at 12 08 55" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/04040afb-3b96-43e0-b7ec-bfdc7ad066cf">
-<br />
-After some time another window should pop up - this time asking for a game archive. Download Windows version of Virtual Succubus and choose it inside that window.
+Download `Virtual_Succubus_Universal.dmg` at [GitHub](https://github.com/Ferbez/virtual-succubus-macos/releases/tag/1.2) and move Virtual Succubus app anywhere you want - preferably to Applications folder. Now open it. A window should pop up - asking for a game archive. Download Windows version of Virtual Succubus and choose it inside that window.
 <br />
 <img width="912" alt="Screenshot 2023-07-12 at 12 24 16" src="https://github.com/Ferbez/virtual-succubus-macos/assets/30198857/9c9bc9d4-2d4c-4542-8894-dd1e50cc6125">
 <br />
