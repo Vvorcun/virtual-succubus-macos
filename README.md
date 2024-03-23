@@ -7,3 +7,8 @@ This wrapper now features both Intel and Apple Silicon versions - with D3DMetal 
 
 ## Download and install
 You'll need Windows version of VS and latest build of this wrapper, which you can download [here](https://github.com/Ferbez/virtual-succubus-macos/releases). Make sure to read all the [instructions](https://github.com/Ferbez/virtual-succubus-macos/blob/main/INSTALLATION.md)!
+
+## Credits
+- [Gcenx](https://github.com/Gcenx) for all the work on Wine
+- Apple for Game Porting Toolkit
+- [SuccuDev](https://www.virtualsuccubus.com) for all his amazing work
