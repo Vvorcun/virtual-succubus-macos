@@ -7,7 +7,7 @@
 	<key>NSHighResolutionCapable</key>
 	<true/>
 	<key>CFBundleExecutable</key>
-	<string>launcher</string>
+	<string>d3dmetal</string>
 	<key>CFBundleIconFile</key>
 	<string>icon</string>
 	<key>CFBundleName</key>
@@ -17,10 +17,10 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.SuccuDev.VirtualSuccubus</string>
 	<key>CFBundleVersion</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.games</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.15</string>
+	<string>14.0</string>
 </dict>
 </plist>
