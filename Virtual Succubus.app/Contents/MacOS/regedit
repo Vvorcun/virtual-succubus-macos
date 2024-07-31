@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+exec env WINEDLLOVERRIDES="winedevice.exe=d" DYLD_FALLBACK_LIBRARY_PATH="$(dirname "$0")/../Frameworks" WINEMSYNC=1 WINEPREFIX="$(dirname "$0")/../Resources/prefix" WINEDEBUG="-all" "$(dirname "$0")/../Resources/wine/bin/wine64" "regedit"
